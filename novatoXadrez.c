@@ -6,31 +6,48 @@ int main(){
     /*Declaração das variaveis, no qual cada uma tem a respectiva peça no xadrez, e o seu valor atribuido é o ponto de 
     partida dos movimentos de cada peça, essas variaveis serao usadas para controlar os loopings em seus respectivos blocos*/
 
-    int Torre = 1, Bispo = 1, Rainha = 1;
+    int Torre = 1, Bispo = 1, Rainha = 1, Cavalo1 = 1, Cavalo2=1;
 
     printf("\n----------- Movimentando peças do xadrez ----------------\n");
 
-    //simulando o movimento da torre, utilizando o laço while
-    printf("\nMovimentação da torre, 5 casas para direita: \n");
-    while(Torre <= 5){
-        printf("Direita\n");
-        Torre++;
-    }
+    //simulando o movimento da torre, utilizando o laço while, 5 casas para direita
 
-    //Simulando o movimento do bispo, utilizando o laço do-while
-    printf("\nMovimentação do bispo, 5 casas para direita e para cima: \n");
+    printf("\nMovimentação da torre: \n");
+    while(Torre <= 5){ //condição que determinará a quantidade de repetições, até 5
+        printf("Direita\n");  //saída no console
+        Torre++;  //incremento na variavel, ou seja, Torre + 1
+    }
+    /*Na movimentação da torre, a variavel de inicialização torre começa com 1, e sera incrementada +1 a cada repetição, 
+    totalizando 5 repetições teoricamente para a direita*/
+
+
+    //Simulando o movimento do bispo, utilizando o laço do-while, 5 casas pra cima e para direita
+    printf("\nMovimentação do bispo: \n");
     do{
-        printf("Cima, Direita\n");
-        Bispo++;
+        printf("Cima, Direita\n"); //saída no console
+        Bispo++; //incremento na variavel, ou seja, Bispo + 1
 
-    } while (Bispo <= 5);
+    } while (Bispo <= 5); //condição que determinará a quantidade de repetições, até 5
 
-    //Simulando o movimento da rainha, utilizando laço For
-    printf("\nMovimentação da Rainha, 8 casas para esquerda: \n");
+    /*Na movimentação do bispo, a variavel de inicialização bispo começa com 1, e sera incrementada +1 a cada repetição, 
+    totalizando 5 repetições igual a torre, a diferença é que , pelo uso do Do-while, está garantida pelo
+    menos uma vez, a saída uma vez no terminal do print*/
+
+
+
+    //Simulando o movimento da rainha, utilizando laço For, 8 casas pra esquerda
+    printf("\nMovimentação da Rainha: \n");
     
-    for (Rainha; Rainha <= 8; Rainha++){
-        printf("Esquerda\n");
+    for (Rainha; Rainha <= 8; Rainha++){ //Respectivamente: inicialização da Rainha, condição que determina as repetições, incremento Rainha +1
+        printf("Esquerda\n"); //saída no console
     }
 
-        return 0;
+    /*Na movimentação da Rainha, o uso do loop for deixa mais organizado e prático, tudo é declarado no seu "Cabeçalho", e conforme foi declarado,
+    teremos 8 repetições, iniciando a Rainha no 1, para a esquerda*/
+
+
+
+    
+
+    return 0;
 }
