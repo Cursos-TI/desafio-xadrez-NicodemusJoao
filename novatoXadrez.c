@@ -6,7 +6,7 @@ int main(){
     /*Declaração das variaveis, no qual cada uma tem a respectiva peça no xadrez, e o seu valor atribuido é o ponto de 
     partida dos movimentos de cada peça, essas variaveis serao usadas para controlar os loopings em seus respectivos blocos*/
 
-    int Torre = 1, Bispo = 1, Rainha = 1, Cavalo1 = 1, Cavalo2=1;
+    int Torre = 1, Bispo = 1, Rainha = 1;
 
     printf("\n----------- Movimentando peças do xadrez ----------------\n");
 
